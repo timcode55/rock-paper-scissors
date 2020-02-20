@@ -5,8 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
 </head>
-<script src="app.js"></script>
+
+<link rel="stylesheet" href="style.css">
 <body>
+    <div class="center">Rock, Paper, Scissors</div>
+    <div class="container">
+        <div class="computerLeft">
+            Computer Score
+            <ul id="listLeft">
+                <li></li>
+            </ul>
+        </div>
+        
+        <div class="playerRight">
+            Player Score
+            <ul id="listRight">
+                <li></li>
+            </ul>
     
+    </div>
+    </div>
+    <div class="results">Results 
+      <ul id="resultDisplay">
+        
+      </ul>
+      </div>
+<section class="playArea">
+    <div class="buttons">
+        <button id ="rock" class="btn">Rock</button>
+        <button id ="paper" class="btn">Paper</button>
+        <button id ="scissors" class="btn">Scissors</button>
+        <button id ="playAgain" class="hide btn">Play Again?</button>
+    </div>
+</section>
+    <div class="instructions">
+        <p>Choose one of the options above.  First one to 10 wins!</p>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
