@@ -75,7 +75,7 @@ function computerWin(playerChoice, computerSelection) {
 }
 
 function winner(computerScore, playerScore) {
-	if (playerScore === 3 && computerScore < playerScore) {
+	if (playerScore === 10 && computerScore < playerScore) {
 		resultsDisplay.innerHTML = '----You Won!!  You have defeated the computer!----';
 		let endInstructions = (document.querySelector('.instructions').innerHTML = '');
 		rockButton.className = 'hide';
@@ -84,7 +84,7 @@ function winner(computerScore, playerScore) {
 		let playAgainButton = document.getElementById('playAgain');
 		playAgainButton.classList.remove('hide');
 		playAgainButton.classList.add('btn');
-	} else if (computerScore === 3 && computerScore > playerScore) {
+	} else if (computerScore === 10 && computerScore > playerScore) {
 		resultsDisplay.innerHTML = '----You Lost!!  The computer beat you.----';
 		let endInstructions = (document.querySelector('.instructions').innerHTML = '');
 		rockButton.className = 'hide';
